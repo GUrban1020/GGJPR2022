@@ -4460,7 +4460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800829420}
   - component: {fileID: 1800829421}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player inverted
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4546,9 +4546,9 @@ GameObject:
   - component: {fileID: 1969765205}
   - component: {fileID: 1969765209}
   - component: {fileID: 1969765210}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4682,5 +4682,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowPrefab: {fileID: 2740957410021741669, guid: 19bbe2d340f32a7489237c451009087e, type: 3}
-  arrow: {fileID: 0}
-  lifeTime: 1.5
+  mask: {fileID: 867674713}
