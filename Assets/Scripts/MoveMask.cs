@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveMask : MonoBehaviour
 {
-    public Camera cam;
+    Camera cam;
     private void Start()
     {
         cam = Camera.main;
@@ -12,6 +12,6 @@ public class MoveMask : MonoBehaviour
     private void Update()
     {
        // Vector3 mpos = new Vector3( Input.mousePosition.x / cam.pixelWidth - 1, Input.mousePosition.y / cam.pixelHeight - 1);
-        transform.position =  cam.ScreenPointToRay(Input.mousePosition).GetPoint(0);
+        transform.position =  cam.ScreenPointToRay(Input.mousePosition).GetPoint(10);
     }
 }
