@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 11555409}
   - component: {fileID: 11555408}
   - component: {fileID: 11555410}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2982,7 +2982,7 @@ GameObject:
   - component: {fileID: 1507003492}
   - component: {fileID: 1507003491}
   - component: {fileID: 1507003493}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

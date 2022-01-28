@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: 9b337ef48d4e0114cb729c5f4910ccfd
+guid: 959529e84b6fdaf41973f5bdf8e4d56a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3841215831871731065
-    second: ProtagIdle_0
+      213: -8440228440020183188
+    second: ProtagMoveUp_0
   - first:
-      213: 6043217321205680714
-    second: ProtagIdle_1
+      213: -9121083498413237213
+    second: ProtagMoveUp_1
   - first:
-      213: -8454222204283272084
-    second: ProtagIdle_2
+      213: -2634602302318019170
+    second: ProtagMoveUp_2
   - first:
-      213: -1893619045647407669
-    second: ProtagIdle_3
+      213: 5416303421790198036
+    second: ProtagMoveUp_3
   - first:
-      213: 2365288795773396054
-    second: ProtagIdle_4
+      213: -6314855418006325870
+    second: ProtagMoveUp_4
   - first:
-      213: -2677578160582066503
-    second: ProtagIdle_5
-  - first:
-      213: 6686567338694617078
-    second: ProtagIdle_6
-  - first:
-      213: -796083316078953396
-    second: ProtagIdle_7
-  - first:
-      213: -8866888011693059451
-    second: ProtagIdle_8
+      213: -5926083915064514285
+    second: ProtagMoveUp_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ProtagIdle_0
+      name: ProtagMoveUp_0
       rect:
         serializedVersion: 2
         x: 0
@@ -132,14 +123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78acda37d8241bac0800000000000000
-      internalID: -3841215831871731065
+      spriteID: c679279b3f84eda80800000000000000
+      internalID: -8440228440020183188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagIdle_1
+      name: ProtagMoveUp_1
       rect:
         serializedVersion: 2
         x: 32
@@ -153,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4ac3f2a222ddd350800000000000000
-      internalID: 6043217321205680714
+      spriteID: 32cd66e32e66b6180800000000000000
+      internalID: -9121083498413237213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagIdle_2
+      name: ProtagMoveUp_2
       rect:
         serializedVersion: 2
         x: 64
@@ -174,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c64c97592b19caa80800000000000000
-      internalID: -8454222204283272084
+      spriteID: e9d78ed2a23007bd0800000000000000
+      internalID: -2634602302318019170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagIdle_3
+      name: ProtagMoveUp_3
       rect:
         serializedVersion: 2
         x: 96
@@ -195,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc5a544c28388b5e0800000000000000
-      internalID: -1893619045647407669
+      spriteID: 419998be3439a2b40800000000000000
+      internalID: 5416303421790198036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagIdle_4
+      name: ProtagMoveUp_4
       rect:
         serializedVersion: 2
         x: 128
@@ -216,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 654e84fb0a133d020800000000000000
-      internalID: 2365288795773396054
+      spriteID: 29538c174702d58a0800000000000000
+      internalID: -6314855418006325870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProtagIdle_5
+      name: ProtagMoveUp_5
       rect:
         serializedVersion: 2
         x: 160
@@ -237,71 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9be792079d457dad0800000000000000
-      internalID: -2677578160582066503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ProtagIdle_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f72f9d41957bcc50800000000000000
-      internalID: 6686567338694617078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ProtagIdle_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4cbf7d117eb3f4f0800000000000000
-      internalID: -796083316078953396
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ProtagIdle_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5829dd7055c72f480800000000000000
-      internalID: -8866888011693059451
+      spriteID: 3196c65b31252cda0800000000000000
+      internalID: -5926083915064514285
       vertices: []
       indices: 
       edges: []
