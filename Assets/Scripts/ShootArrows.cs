@@ -5,26 +5,26 @@ using UnityEngine;
 public class ShootArrows : MonoBehaviour
 {
     public GameObject arrowPrefab;
-    public GameObject arrow;
-    public float lifeTime = 3;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform mask;
+    float coolDown = 1f;
 
-    // Update is called once per frame
+    MoveArrow arrow;
+    float shotTimeStamp = 0;
     void Update()
     {
-        if (Input.GetAxis("Fire1") > 0 && arrow == null)
+        if (Input.GetAxis("Fire1") > 0 && ( arrow == null || Time.timeSinceLevelLoad - shotTimeStamp > coolDown))
         {
-            arrow  = Instantiate(arrowPrefab);
+            shotTimeStamp = Time.timeSinceLevelLoad;
+            arrow = Instantiate(arrowPrefab).GetComponent<MoveArrow>();
+
+            Vector3 n = mask.transform.position - transform.position;
             arrow.transform.position = transform.position;
-            Destroy(arrow, lifeTime);
+            arrow.dir = n.normalized;
+            arrow.transform.right = n.normalized;
+
+            arrow.transform.rotation = Quaternion.Euler(0, 0, arrow.transform.rotation.eulerAngles.z);
+
         }
     }
-    void DestroyArrow()
-    {
-       // Destroy(arrow);
-    }
+    
 }
