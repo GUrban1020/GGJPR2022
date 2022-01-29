@@ -104,6 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6202731726484480457}
   - component: {fileID: 6202731726484480456}
+  - component: {fileID: 1212926337}
   m_Layer: 6
   m_Name: Player inverted
   m_TagString: Untagged
@@ -176,6 +177,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!95 &1212926337
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202731726484480462}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 095358f7639c8a548b2269c18d0cb8b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6202731726651351921
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +211,7 @@ GameObject:
   - component: {fileID: 6202731726651351932}
   - component: {fileID: 6202731726651351935}
   - component: {fileID: 6202731726651351929}
+  - component: {fileID: 868124357}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -316,7 +337,10 @@ MonoBehaviour:
   speedUnitsPerSeconds: 3
   lookX: 0
   lookY: 0
-  animator: {fileID: 0}
+  IsMoving: 0
+  animators:
+  - {fileID: 868124357}
+  - {fileID: 1212926337}
 --- !u!114 &6202731726651351935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,6 +369,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Mask: {fileID: 6202731725555430012}
   isInDarkness: 0
+--- !u!95 &868124357
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202731726651351921}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 095358f7639c8a548b2269c18d0cb8b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6202731727318712045
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,8 +400,8 @@ GameObject:
   - component: {fileID: 6202731727318712047}
   - component: {fileID: 6202731727318712044}
   - component: {fileID: 6202731727318712041}
-  - component: {fileID: 6202731727318712040}
   - component: {fileID: 407313406778069756}
+  - component: {fileID: 1346541709}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -374,7 +417,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6202731727318712045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.3, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6202731727368686280}
@@ -451,20 +494,6 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
---- !u!114 &6202731727318712040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6202731727318712045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 735837bb225173b4a9f901504f04895d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  screenSize: {x: 17.14343, y: 9.642489, z: -10}
-  target: {fileID: 6202731726651351933}
 --- !u!114 &407313406778069756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +508,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
   ListenerNumber: -1
+--- !u!1773428102 &1346541709
+ParentConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202731727318712045}
+  m_Enabled: 1
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0, y: 0, z: -10}
+  m_RotationAtRest: {x: 0, y: 0, z: 0}
+  m_TranslationOffsets:
+  - {x: 0, y: 0, z: 0}
+  m_RotationOffsets:
+  - {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 0
+  m_AffectRotationX: 0
+  m_AffectRotationY: 0
+  m_AffectRotationZ: 0
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 6202731726651351933}
+    weight: 1
 --- !u!1 &6202731727368686286
 GameObject:
   m_ObjectHideFlags: 0
