@@ -21,6 +21,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 802
   Exists: 1
+--- !u!114 &-4907937741462007239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Loop/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-4649010646087561869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,6 +60,49 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-4627249243240246597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/footsteps
+  guid: 630732a17de4df4fbb9644a5cb435276
+  Banks:
+  - {fileID: -1916565693306197401}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-4577796431356377955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Loop/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-2922357547799815140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,15 +118,15 @@ MonoBehaviour:
   Path: event:/Music Loop
   guid: 564314d11f4193478b43090d97bd97d9
   Banks:
-  - {fileID: -4649010646087561869}
+  - {fileID: -1916565693306197401}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 4802512204214751314}
+  - {fileID: -4907937741462007239}
   MinDistance: 0
   MaxDistance: 0
-  Length: 74885
+  Length: 74717
 --- !u!114 &-2358884710877178586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +147,25 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-1916565693306197401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod_Project/GGJPR2022/GGJPR2022/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637790502823141752
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1903257288318233666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,17 +198,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -9125425640721301761}
-  - {fileID: -4649010646087561869}
-  EditorEvents:
-  - {fileID: -2922357547799815140}
+  EditorBanks: []
+  EditorEvents: []
   EditorParameters: []
-  MasterBanks:
-  - {fileID: -4649010646087561869}
-  StringsBanks:
-  - {fileID: -9125425640721301761}
-  stringsBankWriteTime: 637790111100485251
+  MasterBanks: []
+  StringsBanks: []
+  stringsBankWriteTime: 0
   cacheVersion: 6
 --- !u!114 &503350159733805892
 MonoBehaviour:
@@ -207,4 +284,25 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 750
+  Exists: 1
+--- !u!114 &7555575211616158849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod_Project/GGJPR2022/GGJPR2022/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637790502823161758
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 854
   Exists: 1

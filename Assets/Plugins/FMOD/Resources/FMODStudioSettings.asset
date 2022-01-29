@@ -330,8 +330,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Fmod_Project/GGJPR2022/GGJPR2022.fspro
-  sourceBankPath: Fmod_Project\GGJPR2022\Build
+  sourceProjectPath: Fmod_Project/GGJPR2022/GGJPR2022/GGJPR2022.fspro
+  sourceBankPath: Fmod_Project\GGJPR2022\GGJPR2022\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -350,8 +350,7 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks:
-  - Master
+  MasterBanks: []
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
