@@ -11,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
-  - 
-  - 
-  - 
-  - 
+  - PlayerOnLight
+  - PlayerOnDark
+  - Light
+  - Dark
+  - DEV
   - 
   - 
   - 

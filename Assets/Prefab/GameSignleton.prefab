@@ -26,11 +26,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6202731725555430002}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.81, y: 1.68, z: 0}
-  m_LocalScale: {x: 3.8704, y: 3.8704, z: 3.8704}
+  m_LocalPosition: {x: 2.25, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 6202731727368686280}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!331 &6202731725555430013
 SpriteMask:
@@ -211,7 +211,7 @@ Transform:
   m_Children:
   - {fileID: 6202731726484480457}
   m_Father: {fileID: 6202731727368686280}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6202731726651351922
 SpriteRenderer:
@@ -314,6 +314,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedUnitsPerSeconds: 3
+  lookX: 0
+  lookY: 0
+  animator: {fileID: 0}
 --- !u!114 &6202731726651351935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,7 +377,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6202731727368686280}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &6202731727318712047
 Camera:
@@ -407,7 +410,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1015
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -489,9 +492,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 6202731726651351933}
   - {fileID: 6202731727318712046}
   - {fileID: 6202731725555430012}
-  - {fileID: 6202731726651351933}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

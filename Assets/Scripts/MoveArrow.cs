@@ -27,7 +27,7 @@ public class MoveArrow : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") == false)
         {
-            Debug.Log(gameObject.name);
+           // Debug.Log(gameObject.name);
             Destroy(gameObject);
         }
     }

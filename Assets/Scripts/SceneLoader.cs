@@ -22,8 +22,12 @@ public class SceneLoader : MonoBehaviour
     {
         var spawnpoint = GameObject.Find(playerSpawn);
         if (spawnpoint != null)
-            playerObject.transform.position = spawnpoint.transform.position;
-        else Debug.Log($"GameObject named: {playerSpawn} Not found in scene: {scene.name}; not teleporting");
+            playerObject.transform.GetChild(0).position = spawnpoint.transform.position;
+        else
+        {
+            playerObject.transform.GetChild(0).position = Vector3.zero;
+          Debug.Log($"GameObject named: {playerSpawn} Not found in scene: {scene.name}; teleporting to 0,0");
+        }
     }
 
     public static void LoadScene(string sceneName, string playerSpawn)
