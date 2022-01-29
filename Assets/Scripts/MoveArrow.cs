@@ -6,7 +6,7 @@ public class MoveArrow : MonoBehaviour
 {
     public float speed = 5;
     public float lifeTime = 1.5f;
-
+    public bool doHarm = false;
     [HideInInspector()]
     public Vector3 dir;
     RaycastHit2D[] hits = new RaycastHit2D[3];
@@ -31,5 +31,13 @@ public class MoveArrow : MonoBehaviour
             Destroy(gameObject);
         }
     }
-   
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && doHarm)
+        {
+            collision.gameObject.GetComponent<HealthSystem>().hurt();
+            Destroy(gameObject);
+        }
+    }
+
 }

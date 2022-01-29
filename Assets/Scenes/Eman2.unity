@@ -2158,6 +2158,23 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &44776860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6202731726651351921, guid: 789bb67230672214c894de54ba408170, type: 3}
+  m_PrefabInstance: {fileID: 6202731725801478181}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &44776869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44776860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 495a3b6a4ab89ab44a4396c31af1b5bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &600790448
 GameObject:
   m_ObjectHideFlags: 0
@@ -4390,6 +4407,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206888c4ed7d0b14f896e519c06300fe, type: 3}
+--- !u!1001 &1875308864093511009
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1875308863830962488, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875308863830962488, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875308863830962488, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875308863830962488, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875308863830962488, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875308863830962488, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875308863830962488, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875308863830962488, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875308863830962488, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875308863830962488, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875308863830962488, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875308863830962489, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
+      propertyPath: m_Name
+      value: Bulett Emiter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c03dde7ef7e2fea4ab8222e0daa9c72d, type: 3}
 --- !u!1001 &5623510502007477428
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     static string playerSpawn;
+    static string sceneName;
     static GameObject playerObject;
     private void Start()
     {
@@ -30,9 +31,25 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
+    public static void ReLoadScene()
+    {
+        if (sceneName == "")
+        {
+            sceneName = SceneManager.GetActiveScene().name;
+        }
+        LoadScene(sceneName, playerSpawn);
+    }
     public static void LoadScene(string sceneName, string playerSpawn)
     {
         SceneLoader.playerSpawn = playerSpawn;
-        SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+        SceneLoader.sceneName = sceneName;
+        try
+        {
+            SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log(e);
+        }   
     }
 }
