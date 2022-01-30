@@ -5,6 +5,8 @@ using UnityEngine;
 public class ShootArrows : MonoBehaviour
 {
     public GameObject arrowPrefab;
+    public GameObject shootVfxPrefab;
+    GameObject shootVfx;
     public Transform mask;
     float coolDown = 1f;
 
@@ -14,9 +16,18 @@ public class ShootArrows : MonoBehaviour
     {
         if (Input.GetAxis("Fire1") > 0 && ( arrow == null || Time.timeSinceLevelLoad - shotTimeStamp > coolDown))
         {
-            shotTimeStamp = Time.timeSinceLevelLoad;
-            arrow = Instantiate(arrowPrefab).GetComponent<MoveArrow>();
+            if (shootVfx != null)
+            {
+                Destroy(shootVfx);
+            }
 
+            shotTimeStamp = Time.timeSinceLevelLoad;
+
+
+            shootVfx = Instantiate(shootVfxPrefab);
+            shootVfx.transform.position = transform.position;
+
+            arrow = Instantiate(arrowPrefab).GetComponent<MoveArrow>();
             Vector3 n = mask.transform.position - transform.position;
             arrow.transform.position = transform.position;
             arrow.dir = n.normalized;

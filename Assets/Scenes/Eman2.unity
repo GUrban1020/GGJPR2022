@@ -2175,6 +2175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 495a3b6a4ab89ab44a4396c31af1b5bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ui: []
 --- !u!1 &600790448
 GameObject:
   m_ObjectHideFlags: 0
@@ -4528,6 +4529,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6202731727318712047, guid: 789bb67230672214c894de54ba408170, type: 3}
+      propertyPath: orthographic size
+      value: 4.821429
+      objectReference: {fileID: 0}
     - target: {fileID: 6202731727368686280, guid: 789bb67230672214c894de54ba408170, type: 3}
       propertyPath: m_RootOrder
       value: 0

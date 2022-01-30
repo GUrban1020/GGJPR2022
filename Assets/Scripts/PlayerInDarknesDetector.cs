@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class PlayerInDarknesDetector : MonoBehaviour
 {
-    public Transform Mask;
+    public static Transform Mask;
     public bool isInDarkness;
     //[SerializeField] float radius = 4;//radxius
-    
+    private void Start()
+    {
+        if (Mask == null)
+        {
+            Mask = FindObjectOfType<MoveMask>().transform;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
