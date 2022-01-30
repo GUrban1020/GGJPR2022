@@ -9,7 +9,9 @@ public class MovePlayer : MonoBehaviour
     public float lookY;
     public bool IsMoving;
     public Animator[] animators;
-  
+    public AudioClip[] footsteps;
+    float timestamp;
+
     void FixedUpdate()
     {
         Vector3 input = new Vector3 (Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
@@ -27,7 +29,12 @@ public class MovePlayer : MonoBehaviour
             animator.SetFloat("lookX", input.x);
         }
         
-
+        if (IsMoving && (Time.timeSinceLevelLoad - timestamp) > 0.8f )
+        {
+            timestamp = Time.timeSinceLevelLoad;
+            int p = Random.Range(minInclusive: 0, maxExclusive: footsteps.Length) ;
+            AudioSource.PlayClipAtPoint(footsteps[p],transform.position);
+        }
         transform.position += input * speedUnitsPerSeconds * Time.fixedDeltaTime;
     }
 }

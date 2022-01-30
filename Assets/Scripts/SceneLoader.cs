@@ -33,11 +33,12 @@ public class SceneLoader : MonoBehaviour
 
     public static void ReLoadScene()
     {
+        if (playerSpawn == "") playerSpawn = "exit1";
         if (sceneName == "")
-        {
+            {
             sceneName = SceneManager.GetActiveScene().name;
         }
-        LoadScene(sceneName, playerSpawn);
+        LoadScene(SceneManager.GetActiveScene().name, playerSpawn);
     }
     public static void LoadScene(string sceneName, string playerSpawn)
     {
