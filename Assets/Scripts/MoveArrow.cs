@@ -12,8 +12,6 @@ public class MoveArrow : MonoBehaviour
     RaycastHit2D[] hits = new RaycastHit2D[3];
     private void OnEnable()
     {
-        //transform.rotation = Quaternion.Euler(0, 0, Vector3.SignedAngle(transform.position, dir, Vector3.forward));
-
         Destroy(gameObject,lifeTime);
     }
     void Update()
@@ -27,7 +25,6 @@ public class MoveArrow : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") == false)
         {
-           // Debug.Log(gameObject.name);
             Destroy(gameObject);
         }
     }
@@ -35,9 +32,12 @@ public class MoveArrow : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && doHarm)
         {
-            collision.gameObject.GetComponent<HealthSystem>().hurt();
-            Destroy(gameObject);
+            if (collision.gameObject.TryGetComponent<HealthSystem>(out HealthSystem hp))
+            {
+                hp.hurt();
+            }
         }
+        Destroy(gameObject);
     }
 
 }

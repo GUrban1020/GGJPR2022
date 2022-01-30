@@ -1,23 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UniRx;
+using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour
 {
-    public static ReactiveProperty<float> lifePoints;
+    public static float lifePoints = 16;
+    public Text ui;
     void Start()
     {
-        lifePoints = new ReactiveProperty<float>(3);
-        lifePoints.AsObservable().Where(hp => hp <= 0).Do(_ => Ded()).Subscribe().AddTo(this);
+        
     }
     void Ded()
     {
-       // SceneLoader.ReLoadScene();
+       SceneLoader.ReLoadScene();
     }
     public void hurt()
     {
-        lifePoints.Value--;
+        lifePoints -= 1;
+        ui.text = "HP: " + lifePoints;
+        /*foreach (var item in ui)
+        {
+            item.SetActive(false);
+        }
+        if (lifePoints > 0)
+        {
+            for (int i = 0; i < lifePoints; i++)
+            {
+                ui[i].SetActive(true);
+            }
+        }*/
+
+        Debug.Log("hit");
+        if (lifePoints <= 0)
+        {
+            Ded();
+        }
     }
 
 }
