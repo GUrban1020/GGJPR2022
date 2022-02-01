@@ -5,7 +5,7 @@ using UnityEngine;
 public class MagufinCode : MonoBehaviour
 {
     public static int magufinColected = 0;
-    readonly int MaxMagufinsColcted = 6;
+    readonly int MaxMagufinsColcted = 1;
     string sceneToLoadWhenGameIsDone = "End";
     private void OnTriggerEnter2D(Collider2D other)
     {

@@ -597,6 +597,12 @@ MonoBehaviour:
   animators:
   - {fileID: 868124357}
   - {fileID: 1212926337}
+  footsteps:
+  - {fileID: 8300000, guid: be1fb4a6d9180ec40abf8db17d319763, type: 3}
+  - {fileID: 8300000, guid: 8ea87c017251c994ba40e4172e4f9b17, type: 3}
+  - {fileID: 8300000, guid: ae70e42b830dda04681cec17bab9e053, type: 3}
+  - {fileID: 8300000, guid: 44e0d2172d2e0274bb04364ac9b32ce8, type: 3}
+  - {fileID: 8300000, guid: 6a331900a2832014bbcc4f8c8448fa8b, type: 3}
 --- !u!114 &6202731726651351935
 MonoBehaviour:
   m_ObjectHideFlags: 0

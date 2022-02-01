@@ -9,11 +9,13 @@ public class HealthSystem : MonoBehaviour
     public Text ui;
     void Start()
     {
+        lifePoints = 16;
         ui.text = "HP: " + lifePoints;
     }
     void Ded()
     {
        lifePoints = 16;
+       ui.text = "HP: " + lifePoints;
        SceneLoader.ReLoadScene();
     }
     public void hurt()
